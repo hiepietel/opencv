@@ -1,6 +1,8 @@
 import cv2 as cv
 import numpy as np 
 
+#https://www.youtube.com/watch?v=Zf1F4cz8GHU&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K&index=17
+
 img = cv.imread('gradient2.jpg',0)
 _, th1 = cv.threshold(img, 50, 255, cv.THRESH_BINARY)
 _, th2 = cv.threshold(img, 200, 255, cv.THRESH_BINARY_INV)
